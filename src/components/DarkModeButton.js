@@ -15,11 +15,11 @@ function DarkModeButton({ toggleDarkMode, isDark }) {
     >
       <div
         id="switch-toggle"
-        className={`w-6 h-6 md:w-7 md:h-7 relative rounded-full transition duration-500 transform ${
+        className={`w-6 h-6 md:w-7 md:h-7 relative rounded-full transition duration-500 transform p-1 text-white ${
           isDark
             ? "bg-gray-700 translate-x-full"
             : "bg-yellow-500 -translate-x-2"
-        } p-1 text-white`}
+        }`}
       >
         {isDark ? (
           <svg

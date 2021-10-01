@@ -2,24 +2,25 @@ import React from "react";
 import DarkModeButton from "./DarkModeButton";
 
 function hero({ toggleDarkMode, isDark }) {
-  let actionButton = `bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-auto rounded`;
-  // let darkModeButton = `object-right-top`;
+  let actionButton = `p-3 w-1/2 md:w-1/3 rounded-sm mt-10 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600`;
+  let name = `text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-blue-700`;
+  // border-green-500
   return (
-    <section className="h-screen w-screen flex items-center dark:bg-gray-900">
+    <section className="h-screen w-screen flex flex-col items-center dark:bg-gray-900 justify-center lg:items-start lg:pl-28">
       <DarkModeButton toggleDarkMode={toggleDarkMode} isDark={isDark} />
-
-      {/* <button
-        className="absolute right-4 top-4 dark:text-white"
-        onClick={() => toggleDarkMode((isDark) => !isDark)}
-      >
-        toggle
-      </button> */}
       <div className="flex flex-col">
-        <h1 className="text-4xl text-center font-medium dark:text-white">
-          Hi, my name is <span>Marcus</span>. I'm a front end developer.
+        <h1 className="text-5xl md:text-6xl lg:text-7xl text-center lg:text-left font-medium dark:text-white mb-3">
+          Hi, my name is <span className={name}>Marcus</span>
         </h1>
-        <button className={actionButton}>Get to Know Me</button>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left dark:text-white mt-1">
+          I'm a front end developer
+        </h2>
       </div>
+      <button className={actionButton}>
+        <span className="text-white text-xl md:text-3xl lg:text-3xl font-bold">
+          Get to Know Me
+        </span>
+      </button>
     </section>
   );
 }
