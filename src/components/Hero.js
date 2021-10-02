@@ -6,8 +6,8 @@ import "aos/dist/aos.css";
 function hero({ toggleDarkMode, isDark }) {
   AOS.init({ duration: 900 });
 
-  let actionButton = `p-3 w-1/2 md:w-1/3 lg:w-1/4 rounded mt-10 blue-gradient`;
-  let name = `text-transparent bg-clip-text blue-gradient`;
+  let actionButton = `p-3 w-1/2 md:w-1/3 lg:w-1/4 rounded mt-10 main-gradient`;
+  let name = `text-transparent bg-clip-text main-gradient`;
   // border-green-500
   return (
     <section className="h-screen w-full flex flex-col items-center dark:bg-gray-900 justify-center lg:items-start lg:pl-28">

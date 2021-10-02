@@ -10,7 +10,7 @@ function App() {
   return (
     <main className={`bg-gray-50 flex flex-col ${isDark ? "dark" : ""}`}>
       <Hero toggleDarkMode={toggleDarkMode} isDark={isDark} />
-      <About />
+      <About isDark={isDark} />
     </main>
   );
 }

@@ -10,6 +10,10 @@
   @apply text-3xl md:text-4xl lg:text-5xl;
 }
 
-.blue-gradient {
+.main-gradient {
   @apply bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600;
+}
+
+.dark-blue {
+  background: #001347;
 }
