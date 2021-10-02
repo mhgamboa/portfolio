@@ -9,7 +9,7 @@ function About({ isDark }) {
 
   return (
     <section
-      className={`font-medium py-10 px-4 flex flex-wrap min-h-full w-full justify-around ${
+      className={`about-me font-medium pb-20 py-10 px-4 flex flex-wrap min-h-full w-full justify-around ${
         isDark ? "dark-blue" : "main-gradient"
       }`}
     >
