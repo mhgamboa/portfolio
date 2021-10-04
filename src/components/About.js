@@ -23,11 +23,11 @@ function About({ isDark }) {
         src={portrait}
         alt="Myself"
         className="h-auto pb-1 w-auto sm:w-1/3 sm:h-1/3 self-center max-w-xs md:max-w-none"
-        data-aos="fade-right"
+        data-aos="fade-up"
       />
       <div
         className="w-auto sm:w-1/3 dark:text-white text-lg text-center md:text-xl self-center"
-        data-aos="fade-left"
+        data-aos="fade-down"
       >
         <p className="py-5">
           Hi, My Name is Marcus Gamboa. I graduated from BYU in August 2019 with

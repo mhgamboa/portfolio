@@ -48,8 +48,8 @@ function hero({ toggleDarkMode, isDark }) {
         <HTMLIcon className="h-10" fill={isDark && "white"} />
         <CSSIcon className="h-10" fill={isDark && "white"} />
         <JSIcon className="h-10" fill={isDark && "white"} />
-        <TailwindIcon className="h-10" fill={isDark && "white"} />
         <ReactIcon className="h-10" fill={isDark && "white"} />
+        <TailwindIcon className="h-10" fill={isDark && "white"} />
         <D3Icon className="h-10" fill={isDark && "white"} />
       </div>
     </section>

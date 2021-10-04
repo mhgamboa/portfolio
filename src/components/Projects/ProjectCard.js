@@ -25,8 +25,8 @@ function ProjectCard({
       className="flex flex-col border-2 rounded-md border-black dark:border-white pb-5 dark:text-white"
       data-aos="fade-down"
     >
-      <a href={url} target="_blank">
-        <img src={imageLink} alt="project" className="w-full mb-3" />
+      <a href={url} target="_blank" rel="noreferrer" className="h-3/4">
+        <img src={imageLink} alt={`${name} project`} className="w-full mb-3" />
       </a>
 
       <h2 className="h2 text-center mb-8">{name}</h2>
@@ -44,7 +44,7 @@ function ProjectCard({
         {technologies.includes("react") && (
           <ReactIcon className="h-10" fill={isDark && "white"} />
         )}
-        {technologies.includes("tailwind") && (
+        {technologies.includes("tailwindcss") && (
           <TailwindIcon className="h-10" fill={isDark && "white"} />
         )}
         {technologies.includes("d3") && (
