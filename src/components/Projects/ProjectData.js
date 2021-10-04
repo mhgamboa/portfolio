@@ -1,10 +1,13 @@
+import drumImage from "../../img/drum-machine.png";
+import calculatorImage from "../../img/calculator.png";
+
 const projectsData = [
   {
     name: "Drum Machine",
     description1: "Click the buttons or the press the keys to make some noise!",
     url: "https://mgamboa-drum-machine.netlify.app/",
     githubLink: "https://github.com/mhgamboa/fcc-drum-machine",
-    imageLink: "../../img/drum-machine.png",
+    imageLink: drumImage,
     technologies: ["html", "css", "javascript"],
   },
   {
@@ -12,7 +15,7 @@ const projectsData = [
     description1: "A general functioning calculator.",
     url: "https://mgamboa-calculator.netlify.app/",
     githubLink: "https://github.com/mhgamboa/javascript-calculator",
-    imageLink: "../../img/calculator.png",
+    imageLink: calculatorImage,
     technologies: ["html", "css", "javascript", "react"],
   },
 ];

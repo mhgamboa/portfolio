@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ProjectCard({
   name,
@@ -8,15 +10,35 @@ function ProjectCard({
   technologies,
   imageLink,
 }) {
-  console.log(imageLink);
+  AOS.init({ duration: 900 });
+
   return (
-    <div className="border rounded p-5 dark:text-white">
-      <h2>{name}</h2>
-      <p>{description1}</p>
-      <p>{url}</p>
-      <p>{githubLink}</p>
+    <div
+      className="flex flex-col items-center border-2 border-black dark:border-white rounded p-5 dark:text-white"
+      data-aos="fade-down"
+    >
+      <h2 className="h2 mb-5">{name}</h2>
+      <img src={imageLink} alt="project" className="w-full mb-3" />
       <p>{technologies}</p>
-      <img src={imageLink} alt="project" />
+      <p className="text-center mb-5">{description1}</p>
+      <div className="w-full flex justify-around">
+        <a
+          href={url}
+          rel="noreferrer"
+          target="_blank"
+          className="border border-black p-3"
+        >
+          See Live
+        </a>
+        <a
+          href={githubLink}
+          rel="noreferrer"
+          target="_blank"
+          className="border border-black p-3"
+        >
+          See Github
+        </a>
+      </div>
     </div>
   );
 }
