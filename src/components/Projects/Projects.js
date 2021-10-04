@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import ProjectCard from "./ProjectCard";
 import projectsData from "./ProjectData";
 
-function Projects() {
+function Projects({ isDark }) {
   AOS.init({ duration: 900 });
 
   return (
@@ -13,7 +13,7 @@ function Projects() {
       <h1 className="h1 pb-10 mt-6" data-aos="fade-down">
         Projects
       </h1>
-      <div className="projects-container md:grid-cols-3 xl:grid-cols-4 grid gap-8 p-8">
+      <div className="projects-container sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 grid gap-8 p-8">
         {projectsData.map((object) => {
           return (
             <ProjectCard
@@ -24,6 +24,7 @@ function Projects() {
               key={object.name}
               imageLink={object.imageLink}
               technologies={object.technologies}
+              isDark={isDark}
             />
           );
         })}
