@@ -27,15 +27,16 @@ function hero({ toggleDarkMode, isDark }) {
           I'm a front end developer
         </h2>
       </div>
-      <button
-        className="p-3 w-1/2 md:w-1/3 lg:w-1/4 rounded mt-10 main-gradient mb-5"
+      <a
+        href="#about-me"
+        className="p-3 w-1/2 md:w-1/3 lg:w-1/4 rounded mt-10 main-gradient mb-5 text-center"
         data-aos="fade-right"
         data-aos-delay="500"
       >
         <span className="text-white text-xl md:text-3xl lg:text-3xl font-bold">
           Get to Know Me
         </span>
-      </button>
+      </a>
       <div
         className="flex justify-around mb-5 w-1/2 md:w-1/3 lg:w-1/4"
         data-aos="fade-right"
