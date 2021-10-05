@@ -10,9 +10,9 @@ function App() {
 
   return (
     <main
-      className={`${isDark ? "bg-gray-900" : "bg-gray-50"} flex flex-col ${
-        isDark ? "dark" : ""
-      }`}
+      className={`flex flex-col overflow-hidden ${
+        isDark ? "bg-gray-900" : "bg-gray-50"
+      } ${isDark ? "dark" : ""}`}
     >
       <Hero toggleDarkMode={toggleDarkMode} isDark={isDark} />
       <About isDark={isDark} />

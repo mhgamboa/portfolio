@@ -22,33 +22,39 @@ function ProjectCard({
 
   return (
     <div
-      className="flex flex-col border-2 rounded-md border-black dark:border-white pb-5 dark:text-white"
+      className={`flex flex-col justify-between pb-5 rounded-md overflow-hidden bg-white dark:bg-black ${
+        isDark ? "white-shadow" : "shadow-md"
+      }`}
       data-aos="fade-down"
     >
-      <a href={url} target="_blank" rel="noreferrer" className="h-3/4">
-        <img src={imageLink} alt={`${name} project`} className="w-full mb-3" />
+      <a href={url} target="_blank" rel="noreferrer">
+        <img
+          src={imageLink}
+          alt={`${name} project`}
+          className="w-full mb-3 h-36 object-cover"
+        />
       </a>
 
       <h2 className="h2 text-center mb-8">{name}</h2>
       {/* Render Icons for technologies */}
       <div className="flex justify-around mb-5">
         {technologies.includes("html") && (
-          <HTMLIcon className="h-10" fill={isDark && "white"} />
+          <HTMLIcon className="h-10" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("css") && (
-          <CSSIcon className="h-10" fill={isDark && "white"} />
+          <CSSIcon className="h-10" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("javascript") && (
-          <JSIcon className="h-10" fill={isDark && "white"} />
+          <JSIcon className="h-10" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("react") && (
-          <ReactIcon className="h-10" fill={isDark && "white"} />
+          <ReactIcon className="h-10" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("tailwindcss") && (
-          <TailwindIcon className="h-10" fill={isDark && "white"} />
+          <TailwindIcon className="h-10" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("d3") && (
-          <D3Icon className="h-10" fill={isDark && "white"} />
+          <D3Icon className="h-10" fill={isDark ? "white" : ""} />
         )}
       </div>
       <p className="text-center mb-5 mx-5 text-lg">{description1}</p>

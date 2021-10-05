@@ -3,12 +3,8 @@ import DarkModeButton from "./DarkModeButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { ReactComponent as ReactIcon } from "../img/react.svg";
-import { ReactComponent as JSIcon } from "../img/javascript.svg";
-import { ReactComponent as HTMLIcon } from "../img/html5.svg";
-import { ReactComponent as CSSIcon } from "../img/css.svg";
-import { ReactComponent as TailwindIcon } from "../img/tailwindcss.svg";
-import { ReactComponent as D3Icon } from "../img/d3.svg";
+import { ReactComponent as LinkedinIcon } from "../img/linkedin.svg";
+import { ReactComponent as GithubIcon } from "../img/github.svg";
 
 function hero({ toggleDarkMode, isDark }) {
   AOS.init({ duration: 900 });
@@ -45,12 +41,12 @@ function hero({ toggleDarkMode, isDark }) {
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <HTMLIcon className="h-10" fill={isDark && "white"} />
-        <CSSIcon className="h-10" fill={isDark && "white"} />
-        <JSIcon className="h-10" fill={isDark && "white"} />
-        <ReactIcon className="h-10" fill={isDark && "white"} />
-        <TailwindIcon className="h-10" fill={isDark && "white"} />
-        <D3Icon className="h-10" fill={isDark && "white"} />
+        <a href="https://www.linkedin.com/in/marcus-gamboa/">
+          <LinkedinIcon className="h-10" fill={isDark ? "white" : ""} />
+        </a>
+        <a href="https://github.com/mhgamboa">
+          <GithubIcon className="h-10" fill={isDark ? "white" : ""} />
+        </a>
       </div>
     </section>
   );
