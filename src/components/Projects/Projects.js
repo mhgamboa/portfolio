@@ -9,7 +9,7 @@ function Projects({ isDark }) {
   AOS.init({ duration: 900 });
 
   return (
-    <section className="dark:bg-gray-900 flex flex-col items-center dark:text-white font-medium">
+    <section className="dark:bg-gray-900 flex flex-col items-center dark:text-white font-medium mb-10">
       <h1 className="h1 pb-10 mt-6" data-aos="fade-down">
         Projects
       </h1>

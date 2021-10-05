@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 
 import { ReactComponent as LinkedinIcon } from "../img/icons/linkedin.svg";
 import { ReactComponent as GithubIcon } from "../img/icons/github.svg";
+import { ReactComponent as CodePenIcon } from "../img/icons/codepen.svg";
 
 function hero({ toggleDarkMode, isDark }) {
   AOS.init({ duration: 900 });
@@ -47,6 +48,9 @@ function hero({ toggleDarkMode, isDark }) {
         </a>
         <a href="https://github.com/mhgamboa">
           <GithubIcon className="h-10" fill={isDark ? "white" : ""} />
+        </a>
+        <a href="https://codepen.io/marcus-gamboa/">
+          <CodePenIcon className="h-10" fill={isDark ? "white" : ""} />
         </a>
       </div>
     </section>

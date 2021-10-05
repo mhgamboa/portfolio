@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects/Projects";
 import Certifications from "./components/certifications/Certifications";
+import Footer from "./components/Footer";
 
 function App() {
   const [isDark, toggleDarkMode] = useState(false);
@@ -19,6 +20,7 @@ function App() {
       <About isDark={isDark} />
       <Projects isDark={isDark} />
       <Certifications isDark={isDark} />
+      <Footer isDark={isDark} />
     </main>
   );
 }
