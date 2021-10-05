@@ -3,8 +3,8 @@ import DarkModeButton from "./DarkModeButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { ReactComponent as LinkedinIcon } from "../img/linkedin.svg";
-import { ReactComponent as GithubIcon } from "../img/github.svg";
+import { ReactComponent as LinkedinIcon } from "../img/icons/linkedin.svg";
+import { ReactComponent as GithubIcon } from "../img/icons/github.svg";
 
 function hero({ toggleDarkMode, isDark }) {
   AOS.init({ duration: 900 });

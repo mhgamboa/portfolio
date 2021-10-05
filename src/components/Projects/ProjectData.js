@@ -1,8 +1,8 @@
-import drumImage from "../../img/drum-machine.png";
-import calculatorImage from "../../img/calculator.png";
-import MarkdownImage from "../../img/markdown-previewer.png";
-import PomodoroClockImage from "../../img/pomodoro-clock.png";
-import SurveyFormImage from "../../img/survey-form.png";
+import drumImage from "../../img/projects/drum-machine.png";
+import calculatorImage from "../../img/projects/calculator.png";
+import MarkdownImage from "../../img/projects/markdown-previewer.png";
+import PomodoroClockImage from "../../img/projects/pomodoro-clock.png";
+import SurveyFormImage from "../../img/projects/survey-form.png";
 
 const projectsData = [
   {

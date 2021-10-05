@@ -37,8 +37,7 @@ function About({ isDark }) {
 
         <p className="py-5">
           After working for a year as an underwriter I decided to leave my job
-          to become a self-taught software developer with FreecodeCamp and The
-          Odin Project.
+          to become a self-taught software developer through FreecodeCamp.
         </p>
         <p className="py-5">
           After having built some projects, I'm now hoping to get a job as a

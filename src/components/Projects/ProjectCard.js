@@ -2,12 +2,12 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { ReactComponent as ReactIcon } from "../../img/react.svg";
-import { ReactComponent as JSIcon } from "../../img/javascript.svg";
-import { ReactComponent as HTMLIcon } from "../../img/html5.svg";
-import { ReactComponent as CSSIcon } from "../../img/css.svg";
-import { ReactComponent as TailwindIcon } from "../../img/tailwindcss.svg";
-import { ReactComponent as D3Icon } from "../../img/d3.svg";
+import { ReactComponent as ReactIcon } from "../../img/icons/react.svg";
+import { ReactComponent as JSIcon } from "../../img/icons/javascript.svg";
+import { ReactComponent as HTMLIcon } from "../../img/icons/html5.svg";
+import { ReactComponent as CSSIcon } from "../../img/icons/css.svg";
+import { ReactComponent as TailwindIcon } from "../../img/icons/tailwindcss.svg";
+import { ReactComponent as D3Icon } from "../../img/icons/d3.svg";
 
 function ProjectCard({
   name,

@@ -24,7 +24,10 @@ html {
 
 @media only screen and (min-width: 800px) {
   .about-me {
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+  .certifications {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
   }
 }
 
