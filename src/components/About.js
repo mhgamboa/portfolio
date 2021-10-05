@@ -27,7 +27,7 @@ function About({ isDark }) {
         data-aos="fade-right"
       />
       <div
-        className="w-auto sm:w-1/3 dark:text-white text-lg text-center md:text-xl self-center"
+        className="w-auto sm:w-1/3 dark:text-white text-lg text-center md:text-xl lg:text-2xl self-center"
         data-aos="fade-left"
       >
         <p className="py-5">

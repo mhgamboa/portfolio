@@ -7,7 +7,7 @@ import SurveyFormImage from "../../img/projects/survey-form.png";
 const projectsData = [
   {
     name: "Drum Machine",
-    description1: "Click the buttons or the press the keys to make some noise!",
+    description: "Click the buttons or the press the keys to make some noise!",
     url: "https://mgamboa-drum-machine.netlify.app/",
     githubLink: "https://github.com/mhgamboa/fcc-drum-machine",
     imageLink: drumImage,
@@ -15,7 +15,7 @@ const projectsData = [
   },
   {
     name: "Calculator",
-    description1:
+    description:
       "A general functioning calculator. Works on click or on keypress",
     url: "https://mgamboa-calculator.netlify.app/",
     githubLink: "https://github.com/mhgamboa/javascript-calculator",

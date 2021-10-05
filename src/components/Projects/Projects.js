@@ -18,7 +18,7 @@ function Projects({ isDark }) {
           return (
             <ProjectCard
               name={object.name}
-              description1={object.description1}
+              description={object.description}
               url={object.url}
               githubLink={object.githubLink}
               key={object.name}

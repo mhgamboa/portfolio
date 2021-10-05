@@ -11,7 +11,7 @@ import { ReactComponent as D3Icon } from "../../img/icons/d3.svg";
 
 function ProjectCard({
   name,
-  description1,
+  description,
   url,
   githubLink,
   technologies,
@@ -57,7 +57,7 @@ function ProjectCard({
           <D3Icon className="h-10" fill={isDark ? "white" : ""} />
         )}
       </div>
-      <p className="text-center mb-5 mx-5 text-lg">{description1}</p>
+      <p className="text-center mb-5 mx-5 text-lg">{description}</p>
       <div className="w-full flex justify-around">
         <a
           href={url}

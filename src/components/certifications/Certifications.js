@@ -10,12 +10,12 @@ function Certifications({ isDark }) {
 
   return (
     <section
-      className={`certifications font-medium pt-16 pb-20 py-10 flex flex-wrap min-h-full w-full justify-around ${
+      className={`certifications font-medium pt-16 pb-20 py-10 flex flex-wrap min-h-full w-full justify-around dark:text-white ${
         isDark ? "dark-blue" : "main-gradient"
       }`}
     >
       <h1
-        className="h1 text-center mt-2 md:mt-12 mb-12 w-full dark:text-white"
+        className="h1 text-center mt-2 md:mt-12 mb-12 w-full"
         data-aos="fade-down"
       >
         Certifications
