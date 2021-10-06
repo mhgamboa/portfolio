@@ -12,12 +12,20 @@ import chloropleth from "../../img/projects/chloropleth-map.png";
 const projectsData = [
   {
     name: "Drum Machine",
-    description: "Click the buttons or the press the keys to make some noise!",
+    description: "Click the buttons or the press the keys to make some noise",
     url: "https://mgamboa-drum-machine.netlify.app/",
     githubLink: "https://github.com/mhgamboa/fcc-drum-machine",
     imageLink: drums,
     technologies: ["html", "css", "javascript", "react"],
   },
+  // {
+  //   name: "",
+  //   description: "",
+  //   url: "",
+  //   githubLink: "",
+  //   imageLink: "",
+  //       technologies: ["html", "css", "javascript", "react", "d3", "tailwindcss"],
+  // },
   {
     name: "Calculator",
     description:
@@ -37,7 +45,7 @@ const projectsData = [
   },
   {
     name: "Pomodoro Clock",
-    description: "A little Timer to keep you studying.",
+    description: "A little timer to keep you studying",
     url: "https://mgamboa-pomodoro-clock.netlify.app/",
     githubLink: "https://github.com/mhgamboa/pomodoro-clock",
     imageLink: pomodoroClock,
@@ -53,7 +61,7 @@ const projectsData = [
   },
   {
     name: "Treemap",
-    description: "A simple Treemap diagram made with D3",
+    description: "A simple treemap diagram made with D3",
     url: "https://mgamboa-treemap.netlify.app/",
     githubLink: "https://github.com/mhgamboa/fcc-treemap-diagram",
     imageLink: treemap,
@@ -77,23 +85,15 @@ const projectsData = [
   },
   {
     name: "Heatmap",
-    description: "A simple heatmapmade with D3",
+    description: "A simple heatmap made with D3",
     url: "https://mgamboa-heat-map.netlify.app/",
     githubLink: "https://github.com/mhgamboa/fcc-heat-map",
     imageLink: heatMap,
     technologies: ["html", "css", "javascript", "d3"],
   },
-  // {
-  //   name: "",
-  //   description: "",
-  //   url: "",
-  //   githubLink: "",
-  //   imageLink: "",
-  //       technologies: ["html", "css", "javascript", "react", "d3", "tailwindcss"],
-  // },
   {
     name: "Survey Form",
-    description: "A simple Survey form. Made with only HTML & CSS",
+    description: "A simple survey form made using only HTML/CSS",
     url: "https://mgamboa-survey-form.netlify.app/",
     githubLink: "https://github.com/mhgamboa/fccSurvey",
     imageLink: surveyForm,

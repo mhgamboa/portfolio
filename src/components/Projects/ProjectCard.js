@@ -83,7 +83,7 @@ function ProjectCard({
           href={url}
           rel="noreferrer"
           target="_blank"
-          className="border border-black p-3 dark:border-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl"
+          className="border rounded-md border-black p-3 dark:border-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl"
         >
           See Live
         </a>
@@ -91,7 +91,7 @@ function ProjectCard({
           href={githubLink}
           rel="noreferrer"
           target="_blank"
-          className="border border-black p-3 dark:border-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl"
+          className="border rounded-md border-black p-3 dark:border-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl"
         >
           See Github
         </a>
