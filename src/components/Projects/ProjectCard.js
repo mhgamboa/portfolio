@@ -37,33 +37,53 @@ function ProjectCard({
 
       <h2 className="h2 text-center mb-8">{name}</h2>
       {/* Render Icons for technologies */}
-      <div className="flex justify-around mb-5">
+      <div className="flex justify-around mb-5 lg:mt-2">
         {technologies.includes("html") && (
-          <HTMLIcon className="h-10" fill={isDark ? "white" : ""} />
+          <HTMLIcon
+            className="h-10 xl:h-12 2xl:h-14"
+            fill={isDark ? "white" : ""}
+          />
         )}
         {technologies.includes("css") && (
-          <CSSIcon className="h-10" fill={isDark ? "white" : ""} />
+          <CSSIcon
+            className="h-10 xl:h-12 2xl:h-14"
+            fill={isDark ? "white" : ""}
+          />
         )}
         {technologies.includes("javascript") && (
-          <JSIcon className="h-10" fill={isDark ? "white" : ""} />
+          <JSIcon
+            className="h-10 xl:h-12 2xl:h-14"
+            fill={isDark ? "white" : ""}
+          />
         )}
         {technologies.includes("react") && (
-          <ReactIcon className="h-10" fill={isDark ? "white" : ""} />
+          <ReactIcon
+            className="h-10 xl:h-12 2xl:h-14"
+            fill={isDark ? "white" : ""}
+          />
         )}
         {technologies.includes("tailwindcss") && (
-          <TailwindIcon className="h-10" fill={isDark ? "white" : ""} />
+          <TailwindIcon
+            className="h-10 xl:h-12 2xl:h-14"
+            fill={isDark ? "white" : ""}
+          />
         )}
         {technologies.includes("d3") && (
-          <D3Icon className="h-10" fill={isDark ? "white" : ""} />
+          <D3Icon
+            className="h-10 xl:h-12 2xl:h-14"
+            fill={isDark ? "white" : ""}
+          />
         )}
       </div>
-      <p className="text-center mb-5 mx-5 text-lg">{description}</p>
+      <p className="text-center mb-5 md:mb-10 md:mt-6 mx-5 text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
+        {description}
+      </p>
       <div className="w-full flex justify-around">
         <a
           href={url}
           rel="noreferrer"
           target="_blank"
-          className="border border-black p-3 dark:border-white"
+          className="border border-black p-3 dark:border-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl"
         >
           See Live
         </a>
@@ -71,7 +91,7 @@ function ProjectCard({
           href={githubLink}
           rel="noreferrer"
           target="_blank"
-          className="border border-black p-3 dark:border-white"
+          className="border border-black p-3 dark:border-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl"
         >
           See Github
         </a>

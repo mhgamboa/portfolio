@@ -27,7 +27,7 @@ function ProjectCard({ name, url, imageLink, isDark }) {
           href={url}
           rel="noreferrer"
           target="_blank"
-          className="border border-black p-3 dark:border-white"
+          className="border border-black p-3 dark:border-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl"
         >
           See Certification
         </a>

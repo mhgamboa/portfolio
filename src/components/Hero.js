@@ -30,7 +30,7 @@ function hero({ toggleDarkMode, isDark }) {
       </div>
       <a
         href="#about-me"
-        className="p-3 w-1/2 md:w-1/3 lg:w-1/4 rounded mt-10 main-gradient mb-5 text-center"
+        className="p-3 w-1/2 md:w-1/3 lg:w-1/3 rounded mt-10 mb-10 main-gradient text-center"
         data-aos="fade-right"
         data-aos-delay="500"
       >
@@ -39,18 +39,27 @@ function hero({ toggleDarkMode, isDark }) {
         </span>
       </a>
       <div
-        className="flex justify-around mb-5 w-1/2 md:w-1/3 lg:w-1/4"
+        className="flex justify-between mb-5 w-1/2 md:w-1/3 lg:w-1/3"
         data-aos="fade-right"
         data-aos-delay="500"
       >
         <a href="https://www.linkedin.com/in/marcus-gamboa/">
-          <LinkedinIcon className="h-10" fill={isDark ? "white" : ""} />
+          <LinkedinIcon
+            className="h-10 lg:h-12 xl:h-14 2xl:h-20"
+            fill={isDark ? "white" : ""}
+          />
         </a>
         <a href="https://github.com/mhgamboa">
-          <GithubIcon className="h-10" fill={isDark ? "white" : ""} />
+          <GithubIcon
+            className="h-10 lg:h-12 xl:h-14 2xl:h-20"
+            fill={isDark ? "white" : ""}
+          />
         </a>
         <a href="https://codepen.io/marcus-gamboa/">
-          <CodePenIcon className="h-10" fill={isDark ? "white" : ""} />
+          <CodePenIcon
+            className="h-10 lg:h-12 xl:h-14 2xl:h-20"
+            fill={isDark ? "white" : ""}
+          />
         </a>
       </div>
     </section>
