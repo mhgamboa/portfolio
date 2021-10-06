@@ -13,20 +13,31 @@ function Footer({ isDark }) {
   return (
     <footer className="bg-gray-900 text-white flex flex-col items-center p-10">
       <div className="flex justify-around mb-10 w-full sm:w-3/4 lg:w-1/2">
-        <a href="https://www.linkedin.com/in/marcus-gamboa/">
+        <a
+          href="https://www.linkedin.com/in/marcus-gamboa/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LinkedinIcon
             className="h-10 lg:h-12 xl:h-14 2xl:h-20"
             fill="white"
+            target="_blank"
           />
         </a>
-        <a href="https://github.com/mhgamboa">
+        <a href="https://github.com/mhgamboa" target="_blank" rel="noreferrer">
           <GithubIcon className="h-10 lg:h-12 xl:h-14 2xl:h-20" fill="white" />
         </a>
-        <a href="https://codepen.io/marcus-gamboa/">
+        <a
+          href="https://codepen.io/marcus-gamboa/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <CodePenIcon className="h-10 lg:h-12 xl:h-14 2xl:h-20" fill="white" />
         </a>
       </div>
-      <div>&copy; Marcus Gamboa {currentYear}</div>
+      <div className="text-lg lg:text-xl">
+        &copy; Marcus Gamboa {currentYear}
+      </div>
     </footer>
   );
 }

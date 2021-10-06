@@ -43,19 +43,27 @@ function hero({ toggleDarkMode, isDark }) {
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <a href="https://www.linkedin.com/in/marcus-gamboa/">
+        <a
+          href="https://www.linkedin.com/in/marcus-gamboa/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LinkedinIcon
             className="h-10 lg:h-12 xl:h-14 2xl:h-20"
             fill={isDark ? "white" : ""}
           />
         </a>
-        <a href="https://github.com/mhgamboa">
+        <a href="https://github.com/mhgamboa" target="_blank" rel="noreferrer">
           <GithubIcon
             className="h-10 lg:h-12 xl:h-14 2xl:h-20"
             fill={isDark ? "white" : ""}
           />
         </a>
-        <a href="https://codepen.io/marcus-gamboa/">
+        <a
+          href="https://codepen.io/marcus-gamboa/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <CodePenIcon
             className="h-10 lg:h-12 xl:h-14 2xl:h-20"
             fill={isDark ? "white" : ""}
