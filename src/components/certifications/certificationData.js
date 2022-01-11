@@ -3,6 +3,7 @@ import webDesignImage from "../../img/certifications/responsive-web-design.png";
 import javascriptAlgorithmsImage from "../../img/certifications/javascript-algorithms.png";
 import frontEndLibrariesImage from "../../img/certifications/front-end-libraries.png";
 import dataVisualizationImage from "../../img/certifications/data-visualization.png";
+import M001Image from "../../img/certifications/M001.jfif";
 
 const certificationsData = [
   {
@@ -29,6 +30,11 @@ const certificationsData = [
     name: "Data Visualization",
     url: "https://www.freecodecamp.org/certification/mhgamboa/data-visualization",
     imageLink: dataVisualizationImage,
+  },
+  {
+    name: "M001: MongoDB Basics",
+    url: M001Image,
+    imageLink: M001Image,
   },
   // {
   //   name: "",

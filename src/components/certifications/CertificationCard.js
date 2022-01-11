@@ -1,6 +1,7 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import cert from "../../img/certifications/M001.jfif";
 
 function ProjectCard({ name, url, imageLink, isDark }) {
   AOS.init({ duration: 900 });
@@ -13,11 +14,7 @@ function ProjectCard({ name, url, imageLink, isDark }) {
       data-aos="fade-down"
     >
       <a href={url} target="_blank" rel="noreferrer">
-        <img
-          src={imageLink}
-          alt={`${name} project`}
-          className="w-full mb-3 h-36 object-cover"
-        />
+        <img src={imageLink} alt={`${name} project`} className="w-full mb-3 h-36 object-cover" />
       </a>
 
       <h2 className="h2 text-center mb-8">{name}</h2>
@@ -28,6 +25,7 @@ function ProjectCard({ name, url, imageLink, isDark }) {
           rel="noreferrer"
           target="_blank"
           className="border rounded-md border-black p-3 dark:border-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl"
+          download
         >
           See Certification
         </a>

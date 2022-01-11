@@ -8,16 +8,12 @@ import { ReactComponent as HTMLIcon } from "../../img/icons/html5.svg";
 import { ReactComponent as CSSIcon } from "../../img/icons/css.svg";
 import { ReactComponent as TailwindIcon } from "../../img/icons/tailwindcss.svg";
 import { ReactComponent as D3Icon } from "../../img/icons/d3.svg";
+import { ReactComponent as MongoDBIcon } from "../../img/icons/mongodb.svg";
+import { ReactComponent as NodeIcon } from "../../img/icons/node.svg";
+import { ReactComponent as ExpressIcon } from "../../img/icons/express.svg";
+import { ReactComponent as BootstrapIcon } from "../../img/icons/bootstrap.svg";
 
-function ProjectCard({
-  name,
-  description,
-  url,
-  githubLink,
-  technologies,
-  imageLink,
-  isDark,
-}) {
+function ProjectCard({ name, description, url, githubLink, technologies, imageLink, isDark }) {
   AOS.init({ duration: 900 });
 
   return (
@@ -28,51 +24,41 @@ function ProjectCard({
       data-aos="fade-down"
     >
       <a href={url} target="_blank" rel="noreferrer">
-        <img
-          src={imageLink}
-          alt={`${name} project`}
-          className="w-full mb-3 h-36 object-cover"
-        />
+        <img src={imageLink} alt={`${name} project`} className="w-full mb-3 h-36 object-cover" />
       </a>
 
       <h2 className="h2 text-center mb-8">{name}</h2>
       {/* Render Icons for technologies */}
       <div className="flex justify-around mb-5 lg:mt-2">
+        {technologies.includes("mongodb") && (
+          <MongoDBIcon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
+        )}
+        {technologies.includes("express") && (
+          <ExpressIcon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
+        )}
         {technologies.includes("html") && (
-          <HTMLIcon
-            className="h-10 xl:h-12 2xl:h-14"
-            fill={isDark ? "white" : ""}
-          />
+          <HTMLIcon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("css") && (
-          <CSSIcon
-            className="h-10 xl:h-12 2xl:h-14"
-            fill={isDark ? "white" : ""}
-          />
+          <CSSIcon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("javascript") && (
-          <JSIcon
-            className="h-10 xl:h-12 2xl:h-14"
-            fill={isDark ? "white" : ""}
-          />
+          <JSIcon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("react") && (
-          <ReactIcon
-            className="h-10 xl:h-12 2xl:h-14"
-            fill={isDark ? "white" : ""}
-          />
+          <ReactIcon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
+        )}
+        {technologies.includes("node") && (
+          <NodeIcon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("tailwindcss") && (
-          <TailwindIcon
-            className="h-10 xl:h-12 2xl:h-14"
-            fill={isDark ? "white" : ""}
-          />
+          <TailwindIcon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
         )}
         {technologies.includes("d3") && (
-          <D3Icon
-            className="h-10 xl:h-12 2xl:h-14"
-            fill={isDark ? "white" : ""}
-          />
+          <D3Icon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
+        )}
+        {technologies.includes("bootstrap") && (
+          <BootstrapIcon className="h-10 xl:h-12 2xl:h-14" fill={isDark ? "white" : ""} />
         )}
       </div>
       <p className="text-center mb-5 md:mb-10 md:mt-6 mx-5 text-lg md:text-xl xl:text-2xl 2xl:text-3xl">

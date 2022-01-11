@@ -8,8 +8,18 @@ import scatterPlot from "../../img/projects/scatterplot.png";
 import treemap from "../../img/projects/treemap.png";
 import heatMap from "../../img/projects/heat-map.png";
 import chloropleth from "../../img/projects/chloropleth-map.png";
+import todo from "../../img/projects/todo.png";
 
 const projectsData = [
+  {
+    name: "To Do App",
+    description:
+      "Complete Mern Stack App. Hashes passwords with bcrypt, and handles authentication via JSON WebTokens",
+    url: "https://mgamboa-to-do.herokuapp.com/",
+    githubLink: "https://github.com/mhgamboa/to-do-list",
+    imageLink: todo,
+    technologies: ["mongodb", "express", "react", "node", "bootstrap"],
+  },
   {
     name: "Drum Machine",
     description: "Click the buttons or the press the keys to make some noise",
@@ -28,8 +38,7 @@ const projectsData = [
   // },
   {
     name: "Calculator",
-    description:
-      "A general functioning calculator. Works on click or on keypress",
+    description: "A general functioning calculator. Works on click or on keypress",
     url: "https://mgamboa-calculator.netlify.app/",
     githubLink: "https://github.com/mhgamboa/javascript-calculator",
     imageLink: calculator,
