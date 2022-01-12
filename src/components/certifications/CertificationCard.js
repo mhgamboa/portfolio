@@ -1,7 +1,6 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import cert from "../../img/certifications/M001.jfif";
 
 function ProjectCard({ name, url, imageLink, isDark }) {
   AOS.init({ duration: 900 });
@@ -27,7 +26,7 @@ function ProjectCard({ name, url, imageLink, isDark }) {
           className="border rounded-md border-black p-3 dark:border-white text-lg md:text-xl xl:text-2xl 2xl:text-3xl"
           download
         >
-          See Certification
+          {url.match("http") ? "See Certification" : "Download Certification"}
         </a>
       </div>
     </div>

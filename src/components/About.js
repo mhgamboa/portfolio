@@ -14,10 +14,7 @@ function About({ isDark }) {
         isDark ? "dark-blue" : "main-gradient"
       }`}
     >
-      <h1
-        className="h1 text-center mt-2 mb-12 w-full dark:text-white"
-        data-aos="fade-down"
-      >
+      <h1 className="h1 text-center mt-2 mb-12 w-full dark:text-white" data-aos="fade-down">
         About Me
       </h1>
       <img
@@ -31,17 +28,16 @@ function About({ isDark }) {
         data-aos="fade-left"
       >
         <p className="py-5 sm:leading-snug 2xl:leading-normal">
-          Hi, My Name is Marcus Gamboa. I graduated from BYU in August 2019 with
-          a degree in Entrepreneural Management.
+          Hi, My Name is Marcus Gamboa. I graduated from BYU in August 2019 with a degree in
+          Entrepreneural Management.
         </p>
 
         <p className="py-5 2xl:py-28 sm:leading-snug 2xl:leading-normal">
-          After working for a year as an underwriter I decided to leave my job
-          to become a self-taught software developer through FreecodeCamp.
+          After working for a year as an underwriter I decided to leave my job to become a
+          self-taught software developer.
         </p>
         <p className="py-5 sm:leading-snug 2xl:leading-normal">
-          After having built some projects, I'm now hoping to get a job as a
-          junior developer.
+          After having built some projects, I'm now hoping to get a job as a developer.
         </p>
       </div>
     </section>
