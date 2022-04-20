@@ -9,8 +9,17 @@ import treemap from "../../img/projects/treemap.png";
 import heatMap from "../../img/projects/heat-map.png";
 import chloropleth from "../../img/projects/chloropleth-map.png";
 import todo from "../../img/projects/todo.png";
+import fiodl from "../../img/projects/fiodl.png";
 
 const projectsData = [
+  {
+    name: "Interest Comparison App",
+    description: "Scrapes various websites, and visualizes the data",
+    url: "https://fiodl.vercel.app/",
+    githubLink: "https://github.com/mhgamboa/fiodl",
+    imageLink: fiodl,
+    technologies: ["mongodb", "express", "nextjs", "node", "tailwindcss"],
+  },
   {
     name: "To Do App",
     description:
