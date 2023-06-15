@@ -11,7 +11,7 @@ import {
   SparklesIcon,
 } from "@heroicons/react/24/outline";
 
-import profileImageSrc from "../../images/profilepic.jpg";
+import profileImageSrc from "../images/profilepic.jpg";
 
 const aboutItems = [
   { label: "Location", text: "Utah, USA", Icon: MapIcon },

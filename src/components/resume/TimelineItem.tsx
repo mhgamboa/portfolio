@@ -1,31 +1,23 @@
-export interface TimelineItem {
-  date: string;
-  location: string;
-  title: string;
-  content: JSX.Element;
-}
+import { FC, memo } from "react";
 
-export const education: TimelineItem[] = [
-  {
-    date: "April 2007",
-    location: "Clown college",
-    title: "Masters in Beer tasting",
-    content: (
-      <p>
-        Describe your experience at school, what you learned, what useful skills you have
-        acquired etc.
-      </p>
-    ),
-  },
-  {
-    date: "March 2003",
-    location: "School of Business",
-    title: "What did you study 101",
-    content: (
-      <p>
-        Describe your experience at school, what you learned, what useful skills you have
-        acquired etc.
-      </p>
-    ),
-  },
-];
+import { TimelineItem } from "./_resumedata";
+
+const TimelineItem: FC<{ item: TimelineItem }> = memo(({ item }) => {
+  const { title, date, location, content } = item;
+  return (
+    <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
+      <div className="flex flex-col pb-4">
+        <h2 className="text-xl font-bold">{title}</h2>
+        <div className="flex items-center justify-center gap-x-2 md:justify-start">
+          <span className="flex-1 text-sm font-medium italic sm:flex-none">{location}</span>
+          <span>•</span>
+          <span className="flex-1 text-sm sm:flex-none">{date}</span>
+        </div>
+      </div>
+      {content}
+    </div>
+  );
+});
+
+TimelineItem.displayName = "TimelineItem";
+export default TimelineItem;

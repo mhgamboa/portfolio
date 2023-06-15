@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { headerID } from "../components/header/Header";
+import { headerID } from "../components/Header";
 
 import { SectionId } from "../data/data";
 

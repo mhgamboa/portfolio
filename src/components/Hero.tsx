@@ -3,9 +3,9 @@ import { ArrowDownTrayIcon, ChevronDownIcon } from "@heroicons/react/24/outline"
 import classNames from "classnames";
 import Image from "next/image";
 
-import heroImage from "../../images/header-background.webp";
-import Socials from "../Socials";
-import { SectionId } from "../../data/data";
+import heroImage from "../images/header-background.webp";
+import Socials from "./Socials";
+import { SectionId } from "../data/data";
 
 const actions = [
   // {
