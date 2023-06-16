@@ -65,12 +65,6 @@ export interface Stat {
 /**
  * Portfolio section
  */
-export interface PortfolioItem {
-  title: string;
-  description: string;
-  url: string;
-  image: string | StaticImageData;
-}
 
 /**
  * Resume section
