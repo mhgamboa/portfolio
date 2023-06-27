@@ -1,7 +1,7 @@
 import { memo } from "react";
 
 import ResumeSection from "./ResumeSection";
-import TimelineItem from "./TimeLineItem";
+import TimeLineItem from "./TimeLineItem";
 import { skills, education, experience } from "./_resumedata";
 import { SkillGroup } from "./Skills";
 
@@ -13,12 +13,12 @@ const Resume = memo(() => {
         <div className="flex flex-col divide-y-2 divide-neutral-300">
           <ResumeSection title="Work">
             {experience.map((item, index) => (
-              <TimelineItem item={item} key={`${item.title}-${index}`} />
+              <TimeLineItem item={item} key={`${item.title}-${index}`} />
             ))}
           </ResumeSection>
           <ResumeSection title="Education">
             {education.map((item, index) => (
-              <TimelineItem item={item} key={`${item.title}-${index}`} />
+              <TimeLineItem item={item} key={`${item.title}-${index}`} />
             ))}
           </ResumeSection>
           <ResumeSection title="Skills">

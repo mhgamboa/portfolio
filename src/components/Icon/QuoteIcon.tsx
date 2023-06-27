@@ -1,6 +1,6 @@
-import {FC, memo} from 'react';
+import { FC, memo } from "react";
 
-import Icon, {IconProps} from './Icon';
+import Icon, { IconProps } from "./Icon";
 
 const QuoteIcon: FC<IconProps> = memo(props => (
   <Icon {...props}>
@@ -14,5 +14,7 @@ const QuoteIcon: FC<IconProps> = memo(props => (
     />
   </Icon>
 ));
+
+QuoteIcon.displayName = "QuoteIcon";
 
 export default QuoteIcon;
