@@ -19,4 +19,6 @@ export const TimeLineItem: FC<{ item: TimelineItem }> = memo(({ item }) => {
   );
 });
 
+export default TimeLineItem;
+
 TimeLineItem.displayName = "TimeLineItem";
