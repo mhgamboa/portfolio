@@ -91,14 +91,22 @@ export interface TimelineItem {
 
 export const education: TimelineItem[] = [
   {
-    date: "April 2007",
-    location: "Clown college",
-    title: "Masters in Beer tasting",
+    date: "Aug 2019",
+    location: "Brigham Young University – Marriott School of Management",
+    title: "Bachelor of Science in Entrepreneurship",
     content: (
-      <p>
-        Describe your experience at school, what you learned, what useful skills you have
-        acquired etc.
-      </p>
+      <ul className="list-disc">
+        <li>GPA 3.57</li>
+        <li>
+          <a
+            href="https://marriott.byu.edu/news/article?id=1495"
+            className="text-blue-800"
+            target="_blank"
+          >
+            Top 5 nationally ranked program
+          </a>
+        </li>
+      </ul>
     ),
   },
   {

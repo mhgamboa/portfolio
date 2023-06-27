@@ -51,9 +51,11 @@ const About: FC = memo(() => {
             <div className="flex flex-col gap-y-2">
               <h2 className="text-2xl font-bold text-white">About me</h2>
               <p className="prose prose-sm text-gray-300 sm:prose-base">
-                Use this bio section as your way of describing yourself and saying what you do,
-                what technologies you like to use or feel most comfortable with, describing your
-                personality, or whatever else you feel like throwing in.
+                Hey, I&apos;m Marcus, I&apos;m a self-taught web developer. I primarly utilize
+                Typescript/Javascript, with a special emphasis in Next.js utilizing various
+                technologies such as next-auth, Stripe, and tailwindcss. My degree in
+                entrepreneurship degree has given me a unique perspective in both problem solving
+                and communication.
               </p>
             </div>
             <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
