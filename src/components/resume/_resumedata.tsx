@@ -11,36 +11,19 @@ export interface SkillGroup {
 
 export const skills: SkillGroup[] = [
   {
-    name: "Spoken languages",
-    skills: [
-      {
-        name: "English",
-        level: 10,
-      },
-      {
-        name: "French",
-        level: 4,
-      },
-      {
-        name: "Spanish",
-        level: 3,
-      },
-    ],
-  },
-  {
     name: "Frontend development",
     skills: [
       {
         name: "React",
-        level: 9,
+        level: 8,
       },
       {
         name: "Typescript",
         level: 7,
       },
       {
-        name: "GraphQL",
-        level: 6,
+        name: "Tailwindcss",
+        level: 7,
       },
     ],
   },
@@ -48,33 +31,29 @@ export const skills: SkillGroup[] = [
     name: "Backend development",
     skills: [
       {
-        name: "Node.js",
-        level: 8,
+        name: "Next.js",
+        level: 7,
       },
       {
-        name: "Rust",
-        level: 5,
+        name: "Node.js/Express",
+        level: 7,
       },
-      {
-        name: "Golang",
-        level: 4,
-      },
+      // {
+      //   name: "Golang",
+      //   level: 4,
+      // },
     ],
   },
   {
-    name: "Mobile development",
+    name: "Spoken languages",
     skills: [
       {
-        name: "React Native",
-        level: 9,
+        name: "English",
+        level: 10,
       },
       {
-        name: "Flutter",
-        level: 4,
-      },
-      {
-        name: "Swift",
-        level: 3,
+        name: "Spanish",
+        level: 6,
       },
     ],
   },
@@ -109,40 +88,42 @@ export const education: TimelineItem[] = [
       </ul>
     ),
   },
-  {
-    date: "March 2003",
-    location: "School of Business",
-    title: "What did you study 101",
-    content: (
-      <p>
-        Describe your experience at school, what you learned, what useful skills you have
-        acquired etc.
-      </p>
-    ),
-  },
+  // {
+  //   date: "March 2003",
+  //   location: "School of Business",
+  //   title: "What did you study 101",
+  //   content: (
+  //     <p>
+  //       Describe your experience at school, what you learned, what useful skills you have
+  //       acquired etc.
+  //     </p>
+  //   ),
+  // },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: "March 2010 - Present",
-    location: "Awesome Development Company",
-    title: "Senior UX Engineer",
+    date: "March 2022 - Present",
+    location: "Nōmadik Living",
+    title: "Sofware Engineer (Full Stack)",
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been
-        working with, and anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc">
+        <li>Implement Stripe payment system and API calls</li>
+        <li>Utilize Postman to properly test and implement all API calls</li>
+        <li>Automate client email reminders through Heroku cron tasks with Node.js/express</li>
+        <li>Manage UX/UI designer in implementation of mobile & desktop designs</li>
+      </ul>
     ),
   },
-  {
-    date: "March 2007 - February 2010",
-    location: "Garage Startup Studio",
-    title: "Junior bug fixer",
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been
-        working with, and anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
+  // {
+  //   date: "March 2007 - February 2010",
+  //   location: "Garage Startup Studio",
+  //   title: "Junior bug fixer",
+  //   content: (
+  //     <p>
+  //       Describe work, special projects, notable achievements, what technologies you have been
+  //       working with, and anything else that would be useful for an employer to know.
+  //     </p>
+  //   ),
+  // },
 ];

@@ -12,46 +12,35 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-interface DropboxResetPasswordEmailProps {
+interface EmailProps {
   name: string;
   message: string;
 }
 
 const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "";
 
-export const Confirm = ({ name, message }: DropboxResetPasswordEmailProps) => {
+export const Confirm = ({ name, message }: EmailProps) => {
   return (
     <Html>
       <Head />
-      <Preview>Dropbox reset your password</Preview>
+      <Preview>Thanks for sending me a message!</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section>
             <Text style={text}>Hi {name},</Text>
             <Text style={text}>
-              This is an automated message to let you know I just got your email:
+              Thanks for reaching out on my personal website! This is an automated email to let
+              you know I just got your message:
             </Text>
 
-            <Section>
-              <Text style={text}>
-                A fine-grained personal access token (<Link>resend</Link>) was recently added to
-                your account.
-              </Text>
+            <Text style={text}>
+              <code>&quot;{message}&quot;</code>
+            </Text>
 
-              <Button style={button}>View your token</Button>
-            </Section>
-            <Text style={text}>
-              If you don&apos;t want to change your password or didn&apos;t request this, just
-              ignore and delete this message.
-            </Text>
-            <Text style={text}>
-              To keep your account secure, please don&apos;t forward this email to anyone. See
-              our Help Center for{" "}
-              <Link style={anchor} href="https://dropbox.com">
-                more security tips.
-              </Link>
-            </Text>
-            <Text style={text}>Happy Dropboxing!</Text>
+            <Text style={text}>I will do my best to respond to you in 24 hours.</Text>
+
+            <Text style={text}>Expect to hear from me soon!</Text>
+            <Text style={text}> -Marcus</Text>
           </Section>
         </Container>
       </Body>

@@ -51,11 +51,11 @@ const About: FC = memo(() => {
             <div className="flex flex-col gap-y-2">
               <h2 className="text-2xl font-bold text-white">About me</h2>
               <p className="prose prose-sm text-gray-300 sm:prose-base">
-                Hey, I&apos;m Marcus, I&apos;m a self-taught web developer. I primarly utilize
-                Typescript/Javascript, with a special emphasis in Next.js utilizing various
-                technologies such as next-auth, Stripe, and tailwindcss. My degree in
-                entrepreneurship degree has given me a unique perspective in both problem solving
-                and communication.
+                Hi I&apos;m Marcus, and I&apos;m a self-taught web developer. I use
+                Typescript/Javascript, with a special emphasis in Next.js (With technologies
+                other technologies such as next-auth, Stripe, and tailwindcss) to create custom
+                web apps. I also have a BS in entrepreneurship which has gives me a unique
+                perspective in both problem solving and communication.
               </p>
             </div>
             <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
