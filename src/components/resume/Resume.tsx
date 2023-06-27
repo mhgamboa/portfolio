@@ -1,7 +1,7 @@
 import { memo } from "react";
 
 import ResumeSection from "./ResumeSection";
-import { TimeLineItem } from "./TimeLineItem";
+import { TimeLineItem } from "../resume/TimeLineItem";
 import { skills, education, experience } from "./_resumedata";
 import { SkillGroup } from "./Skills";
 
