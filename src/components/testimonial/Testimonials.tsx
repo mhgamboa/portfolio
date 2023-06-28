@@ -151,7 +151,7 @@ const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean }> = memo(
       )}
       <div className="flex flex-col gap-y-4">
         <p className="prose prose-sm font-medium italic text-white sm:prose-base">{text}</p>
-        <p className="text-xs italic text-white sm:text-sm md:text-base lg:text-lg">-- {name}</p>
+        <p className="text-xs italic text-white sm:text-sm md:text-base lg:text-lg">- {name}</p>
       </div>
     </div>
   )

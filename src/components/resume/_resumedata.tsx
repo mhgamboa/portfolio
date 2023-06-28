@@ -74,7 +74,7 @@ export const education: TimelineItem[] = [
     location: "Brigham Young University – Marriott School of Management",
     title: "Bachelor of Science in Entrepreneurship",
     content: (
-      <ul className="list-disc">
+      <ul className="list-disc list-inside space-y-1">
         <li>GPA 3.57</li>
         <li>
           <a
@@ -107,7 +107,7 @@ export const experience: TimelineItem[] = [
     location: "Nōmadik Living",
     title: "Sofware Engineer (Full Stack)",
     content: (
-      <ul className="list-disc">
+      <ul className="list-disc list-inside space-y-1">
         <li>Implement Stripe payment system and API calls</li>
         <li>Utilize Postman to properly test and implement all API calls</li>
         <li>Automate client email reminders through Heroku cron tasks with Node.js/express</li>
