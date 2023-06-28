@@ -39,16 +39,6 @@ const ContactForm = memo(() => {
       method: "POST",
       body: JSON.stringify({ email, message, name }),
     });
-    // ("use server");
-
-    // const resend = new Resend("re_UaDmi1vN_A9g2TDuNv2kV1uKRV7F1fLdi");
-
-    // await resend.emails.send({
-    //   from: "onboarding@resend.dev",
-    //   to: "marcus.gamboa@gmail.com",
-    //   subject: "Hello World",
-    //   html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
-    // });
 
     console.log("Data to send: ", data);
   };

@@ -14,5 +14,12 @@ export async function POST(request: Request) {
     react: Confirm({ name, message }),
   });
 
+  await resend.emails.send({
+    from: "marcus@marcusgamboa.com",
+    to: "marcus.gamboa@gmail.com",
+    subject: `${email} Just sent you a message! 😁`,
+    react: Confirm({ name, message }),
+  });
+
   return NextResponse.json({ status: "OK" });
 }

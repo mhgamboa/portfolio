@@ -33,8 +33,7 @@ export interface ContactValue {
 
 export const contact: ContactSection = {
   headerText: "Get in touch.",
-  description:
-    "Here is a good spot for a message to your readers to let them know how best to reach out to you.",
+  description: "Send me a message, and be on the lookout for a confirmation email",
   items: [
     {
       type: ContactType.Email,
