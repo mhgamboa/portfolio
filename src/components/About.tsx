@@ -17,7 +17,7 @@ const aboutItems = [
   { label: "Location", text: "Utah, USA", Icon: MapIcon },
   { label: "Age", text: "29", Icon: CalendarIcon },
   { label: "Nationality", text: "United States", Icon: FlagIcon },
-  { label: "Interests", text: "Chess, Comics, D&D", Icon: SparklesIcon },
+  { label: "Interests", text: "Board games/Nerdy things", Icon: SparklesIcon },
   { label: "Education", text: "Brigham Young University", Icon: AcademicCapIcon },
   { label: "Employment", text: "Nōmadik Living", Icon: BuildingOffice2Icon },
 ];
@@ -52,10 +52,17 @@ const About: FC = memo(() => {
               <h2 className="text-2xl font-bold text-white">About me</h2>
               <p className="prose prose-sm text-gray-300 sm:prose-base">
                 Hi I&apos;m Marcus, and I&apos;m a self-taught web developer. I use
-                Typescript/Javascript, with a special emphasis in Next.js (With technologies
-                other technologies such as next-auth, Stripe, and tailwindcss) to create custom
-                web apps. I also have a BS in entrepreneurship which has gives me a unique
-                perspective in both problem solving and communication.
+                Typescript/Javascript and related technologies (next-auth, Stripe, and
+                tailwindcss), with a special emphasis in Next.js to create custom web apps. I
+                also have a{" "}
+                <a
+                  className="text-blue-500"
+                  href="https://commtech.byu.edu/noauth/degreeVerify/?dvid=U9ZAVT4D"
+                  target="_blank"
+                >
+                  BS in Entrepreneurship
+                </a>{" "}
+                which gives me a unique perspective in both problem solving and communication.
               </p>
             </div>
             <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
