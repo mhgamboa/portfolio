@@ -11,7 +11,8 @@ import {
   SparklesIcon,
 } from "@heroicons/react/24/outline";
 
-import profileImageSrc from "../images/profilepic.jpg";
+// import profileImageSrc from "../images/profilepic.jpg";
+import profileImageSrc from "../images/profile.png";
 
 const aboutItems = [
   { label: "Location", text: "Utah, USA", Icon: MapIcon },
@@ -34,7 +35,7 @@ const About: FC = memo(() => {
         >
           {!!profileImageSrc && (
             <div className="col-span-1 flex justify-center md:justify-start">
-              <div className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32">
+              <div className="relative h-26 w-26 overflow-hidden rounded-xl md:h-38 md:w-36">
                 <Image
                   alt="about-me-image"
                   className="h-full w-full object-cover"
@@ -62,7 +63,7 @@ const About: FC = memo(() => {
                 >
                   BS in Entrepreneurship
                 </a>{" "}
-                which gives me a unique perspective in both problem solving and communication.
+                that gives me a unique perspective in both problem solving and communication.
               </p>
             </div>
             <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
