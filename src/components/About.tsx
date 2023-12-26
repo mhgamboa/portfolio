@@ -52,10 +52,10 @@ const About: FC = memo(() => {
             <div className="flex flex-col gap-y-2">
               <h2 className="text-2xl font-bold text-white">About me</h2>
               <p className="prose prose-sm text-gray-300 sm:prose-base">
-                Hi I&apos;m Marcus, and I&apos;m a self-taught web developer. I use
+                Hi I&apos;m Marcus, and I&apos;m a self-taught software Engineer. I use
                 Typescript/Javascript and related technologies (next-auth, Stripe, and
-                tailwindcss), with a special emphasis in Next.js to create custom web apps. I
-                also have a{" "}
+                tailwindcss), with a special emphasis in Next.js to create custom web apps. I use
+                python and Javascript to automate various processes. I also have a{" "}
                 <a
                   className="text-blue-500"
                   href="https://commtech.byu.edu/noauth/degreeVerify/?dvid=U9ZAVT4D"
