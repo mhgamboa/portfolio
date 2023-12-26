@@ -21,19 +21,19 @@ export interface PortfolioItem {
 }
 
 export const portfolioItems: PortfolioItem[] = [
-  {
-    title: "Housing Market Website",
-    description:
-      "Housing Market website. I implemented the Stripe payment processing on the backend",
-    url: "https://timbaker.me",
-    image: nomadikLivingImage,
-  },
-  {
-    title: "Lost Cities Scoring Calculator",
-    description: 'A scoring calculator for the board game "Lost Cities"',
-    url: "https://lost-cities-scoring.vercel.app/",
-    image: lostCitiesImage,
-  },
+  // {
+  //   title: "Housing Market Website",
+  //   description:
+  //     "Housing Market website. I implemented the Stripe payment processing on the backend",
+  //   url: "https://timbaker.me",
+  //   image: nomadikLivingImage,
+  // },
+  // {
+  //   title: "Lost Cities Scoring Calculator",
+  //   description: 'A scoring calculator for the board game "Lost Cities"',
+  //   url: "https://lost-cities-scoring.vercel.app/",
+  //   image: lostCitiesImage,
+  // },
   {
     title: "Hulu Clone",
     description: "A Frontend clone of the base hulu website. Fetches data from tmdb",
