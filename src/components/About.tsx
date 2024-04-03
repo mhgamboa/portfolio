@@ -16,11 +16,11 @@ import profileImageSrc from "../images/profile.png";
 
 const aboutItems = [
   { label: "Location", text: "Utah, USA", Icon: MapIcon },
-  { label: "Age", text: "29", Icon: CalendarIcon },
+  { label: "Age", text: "30", Icon: CalendarIcon },
   { label: "Nationality", text: "United States", Icon: FlagIcon },
   { label: "Interests", text: "Board games/Nerdy things", Icon: SparklesIcon },
   { label: "Education", text: "Brigham Young University", Icon: AcademicCapIcon },
-  { label: "Employment", text: "Nōmadik Living", Icon: BuildingOffice2Icon },
+  { label: "Employment", text: "Freelance Development", Icon: BuildingOffice2Icon },
 ];
 
 const About: FC = memo(() => {
@@ -53,9 +53,8 @@ const About: FC = memo(() => {
               <h2 className="text-2xl font-bold text-white">About me</h2>
               <p className="prose prose-sm text-gray-300 sm:prose-base">
                 Hi I&apos;m Marcus, and I&apos;m a self-taught software engineer. I use
-                Typescript/Javascript and related technologies (next-auth, Stripe, and
-                tailwindcss), with a special emphasis in Next.js to create custom web apps. I use
-                python and Javascript to automate various processes. I also have a{" "}
+                Typescript/Javascript, with a special emphasis in Next.js to create custom web
+                apps. I also have a{" "}
                 <a
                   className="text-blue-500"
                   href="https://commtech.byu.edu/noauth/degreeVerify/?dvid=U9ZAVT4D"
@@ -63,7 +62,8 @@ const About: FC = memo(() => {
                 >
                   BS in Entrepreneurship
                 </a>{" "}
-                that gives me a unique perspective in both problem solving and communication.
+                that has helped me develop a unique perspective in both problem solving and
+                communication.
               </p>
             </div>
             <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">

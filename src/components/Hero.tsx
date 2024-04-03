@@ -43,7 +43,7 @@ const Hero = memo(() => {
           <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
             I&apos;m a Utah based <strong className="text-stone-100">software engineer</strong>,
             currently working as a <strong className="text-stone-100">Freelance Engineer</strong>
-            ..
+            where I automate processes and build modern, mobile-responsive websites.
           </p>
           <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
             In my free time time, you can catch me learning{" "}
