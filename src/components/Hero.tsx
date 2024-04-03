@@ -41,9 +41,9 @@ const Hero = memo(() => {
             I&apos;m Marcus Gamboa.
           </h1>
           <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-            I&apos;m a Utah based <strong className="text-stone-100">Admin</strong>, currently
-            working at <strong className="text-stone-100">Trurock Wealth</strong> where I
-            automate processes, and maintain a modern, mobile-first website.
+            I&apos;m a Utah based <strong className="text-stone-100">software engineer</strong>,
+            currently working as a <strong className="text-stone-100">Freelance Engineer</strong>
+            ..
           </p>
           <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
             In my free time time, you can catch me learning{" "}
