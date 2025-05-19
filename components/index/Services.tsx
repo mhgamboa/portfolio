@@ -3,23 +3,23 @@ import React from "react";
 
 const services = [
   {
-    title: "🚀 Let's Work Together",
+    title: "💼 Hire Me",
     description:
-      "With experience building production-ready apps, I can help build your next project with Next.js. Let's see if we're a good fit!",
+      "Freelancing, W2, favors or however you want to pay me. Let's chat and see if I can help.",
     className: "bg-red-400 dark:bg-red-600",
     colSpan: "",
   },
   {
     title: "💬 Get Feedback on Your Project",
     description:
-      "Need advice on your startup? Let's chat! (20 minish) I'll share my thoughts on your project and maybe give you some pointers?",
+      "Need advice on your startup? Let's chat! (~20 min) I'll share my thoughts on your project and maybe even give you some pointers?",
     className: "bg-teal-400 dark:bg-teal-600",
     colSpan: "",
   },
   {
-    title: "🎥 want to collaborate on content?",
+    title: "🚀 Let's Work Together",
     description:
-      "My content reaches thousands of developers interested in Next.js, React, and modern web development. Let's create something valuable together.",
+      "With experience building production-ready apps, I can help build your next project with Next.js. Let's see if we're a good fit!",
     className: "bg-purple-400 dark:bg-purple-600",
     colSpan: "md:col-span-2",
   },
