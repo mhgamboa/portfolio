@@ -4,9 +4,11 @@ import type React from "react";
 import { useState } from "react";
 import { Send } from "lucide-react";
 import { z } from "zod";
+import { sendEmail } from "@/app/action";
+import { tryCatch } from "@/utils/trycatch";
 
 // Define Zod schema for form validation
-const formSchema = z.object({
+export const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters" }),
   email: z.string().email({ message: "Please enter a valid email address" }),
   message: z.string().min(5, { message: "Message must be at least 5 characters" }),
@@ -16,14 +18,15 @@ type FormData = z.infer<typeof formSchema>;
 
 export function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    message: "",
+    name: "Marcus Gamboa",
+    email: "marcus@gamboa.dev",
+    message: "Hello, I'm Marcus Gamboa",
   });
 
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [touchedFields, setTouchedFields] = useState<Set<keyof FormData>>(new Set());
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -70,6 +73,7 @@ export function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitError(null);
 
     // Validate all form data with Zod
     try {
@@ -79,14 +83,13 @@ export function ContactForm() {
       setErrors({});
 
       // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
-
-      // In a real app, you would send the form data to your backend
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // })
+      const result = await tryCatch(sendEmail(formData));
+      console.log(result);
+      if (result.error) {
+        setSubmitError(result.error.toString());
+        setIsSubmitting(false);
+        return;
+      }
 
       setIsSubmitting(false);
       setSubmitSuccess(true);
@@ -108,7 +111,15 @@ export function ContactForm() {
 
         // Mark all fields as touched
         setTouchedFields(new Set(Object.keys(formData) as Array<keyof FormData>));
+      } else {
+        // Handle unexpected errors
+        setSubmitError(
+          error instanceof Error
+            ? error.message
+            : "An unexpected error occurred. Please try again later."
+        );
       }
+      setIsSubmitting(false);
     }
   };
 
@@ -125,6 +136,14 @@ export function ContactForm() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
+            {submitError && (
+              <div
+                className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-900/50 dark:text-red-400"
+                role="alert"
+              >
+                {submitError}
+              </div>
+            )}
             <div>
               <label htmlFor="name" className="block font-bold mb-1 text-black dark:text-white">
                 Name
