@@ -6,15 +6,7 @@ import { Send } from "lucide-react";
 import { z } from "zod";
 import { sendEmail } from "@/app/action";
 import { tryCatch } from "@/utils/trycatch";
-
-// Define Zod schema for form validation
-export const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
-  email: z.string().email({ message: "Please enter a valid email address" }),
-  message: z.string().min(5, { message: "Message must be at least 5 characters" }),
-});
-
-type FormData = z.infer<typeof formSchema>;
+import { formSchema, type FormData } from "@/lib/schemas";
 
 export function ContactForm() {
   const [formData, setFormData] = useState<FormData>({

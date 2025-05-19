@@ -1,13 +1,11 @@
+"use server";
+
 import { EmailTemplate } from "@/components/email-template";
 import { Resend } from "resend";
-import { z } from "zod";
-import { formSchema } from "@/components/contact-form";
-
-type FormData = z.infer<typeof formSchema>;
+import { formSchema, type FormData } from "@/lib/schemas";
 
 export async function sendEmail(formData: FormData) {
   const validatedFields = formSchema.safeParse(formData);
-  // console.log("process.env.RESEND_API_KEY", process.env.RESEND_API_KEY);
 
   if (!validatedFields.success) return { data: null, error: "Invalid fields" };
   const resend = new Resend(process.env.RESEND_API_KEY);
@@ -18,11 +16,14 @@ export async function sendEmail(formData: FormData) {
       to: ["delivered@resend.dev"],
       subject: "New Contact Form Submission",
       react: EmailTemplate({
-        firstName: formData.name,
-        email: formData.email,
-        message: formData.message,
+        firstName: validatedFields.data.name,
+        email: validatedFields.data.email,
+        message: validatedFields.data.message,
       }),
     });
+
+    console.log("data", data);
+    console.log("error", error);
     return { data, error };
   } catch (error) {
     console.error(error);
