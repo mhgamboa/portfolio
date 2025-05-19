@@ -12,8 +12,8 @@ export async function sendEmail(formData: FormData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["delivered@resend.dev"],
+      from: "Marcus Gamboa <marcus@marcusgamboa.com>",
+      to: [validatedFields.data.email, "marcus@marcusgamboa.com"],
       subject: "New Contact Form Submission",
       react: EmailTemplate({
         firstName: validatedFields.data.name,
@@ -22,8 +22,6 @@ export async function sendEmail(formData: FormData) {
       }),
     });
 
-    console.log("data", data);
-    console.log("error", error);
     return { data, error };
   } catch (error) {
     console.error(error);
