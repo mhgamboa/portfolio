@@ -14,12 +14,14 @@ export default function Home() {
         <div className="flex justify-end mb-6">
           <ThemeToggle />
         </div>
+
         <Profile />
         <Bio />
         <Services />
         <Projects />
         <Companies />
         <ContactForm />
+
         {/* Footer */}
         <footer className="text-center pb-8">
           <p className="text-sm">
