@@ -7,6 +7,8 @@ import { z } from "zod";
 import { sendEmail } from "@/app/action";
 import { tryCatch } from "@/utils/trycatch";
 import { formSchema, type FormData } from "@/lib/schemas";
+import { motion } from "framer-motion";
+import { useInView } from "@/hooks/use-in-view";
 
 export function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
@@ -20,6 +22,8 @@ export function ContactForm() {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [touchedFields, setTouchedFields] = useState<Set<keyof FormData>>(new Set());
+
+  const contactSection = useInView({ threshold: 0.2 });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -139,7 +143,14 @@ export function ContactForm() {
   };
 
   return (
-    <div className="mb-16" id="contact-form">
+    <motion.div
+      className="mb-16"
+      ref={contactSection.ref as any}
+      initial={{ opacity: 0, y: 50 }}
+      animate={contactSection.isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, type: "spring" }}
+      id="contact-form"
+    >
       <h2 className="text-xl font-black mb-6 text-center">Get In Touch</h2>
       <div className="border-4 border-black bg-white dark:bg-[#2a2a2a] p-6 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]">
         {submitSuccess ? (
@@ -283,6 +294,6 @@ export function ContactForm() {
           </form>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
