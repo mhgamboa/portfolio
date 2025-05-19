@@ -113,7 +113,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="mb-16">
+    <div className="mb-16" id="contact-form">
       <h2 className="text-xl font-black mb-6 text-center">Get In Touch</h2>
       <div className="border-4 border-black bg-white dark:bg-[#2a2a2a] p-6 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]">
         {submitSuccess ? (
