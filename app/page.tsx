@@ -3,7 +3,7 @@ import { ContactForm } from "@/components/contact-form";
 import { Bio } from "@/components/index/Bio";
 import { Services } from "@/components/index/Services";
 import { Projects } from "@/components/index/Projects";
-import { Companies } from "@/components/index/Companies";
+// import { Companies } from "@/components/index/Companies";
 import Profile from "@/components/index/Profile";
 
 export default function Home() {
