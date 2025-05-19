@@ -3,27 +3,28 @@ import Link from "next/link";
 import { Github, ExternalLink } from "lucide-react";
 
 // Sample data
-const projects = [
+type Project = {
+  title: string;
+  description: string;
+  tags: string[];
+  websiteUrl: string;
+  githubUrl?: string | null;
+};
+
+const projects: Project[] = [
   {
-    title: "NextCommerce",
-    description: "A full-featured e-commerce platform built with Next.js and Stripe.",
+    title: "Forge of Fables",
+    description: "A D&D app that supercharges your campaigns with AI.",
     tags: ["Next.js", "Stripe", "Tailwind"],
-    websiteUrl: "https://nextcommerce.demo",
-    githubUrl: "https://github.com/marcusgamboa/nextcommerce",
-  },
-  {
-    title: "DevBlog",
-    description: "A technical blog sharing insights about Next.js and web development.",
-    tags: ["Next.js", "MDX", "Vercel"],
-    websiteUrl: "https://devblog.demo",
+    websiteUrl: "https://forgeoffables.com",
     githubUrl: null,
   },
   {
-    title: "TaskMaster",
-    description: "A productivity app for managing tasks and projects efficiently.",
-    tags: ["React", "Next.js", "Firebase"],
-    websiteUrl: "https://taskmaster.demo",
-    githubUrl: "https://github.com/marcusgamboa/taskmaster",
+    title: "Game Scoring app",
+    description: 'A simple app for the board game "Lost Cities"',
+    tags: ["Next.js", "MDX", "Vercel"],
+    websiteUrl: "https://lcbg.vercel.app/",
+    githubUrl: null,
   },
 ];
 
@@ -42,6 +43,7 @@ export const Projects = () => {
             <div className="absolute top-4 right-4 flex gap-2">
               <Link
                 href={project.websiteUrl}
+                target="_blank"
                 className="bg-[#69a1f0] p-1.5 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-0.5 hover:translate-x-0.5 transition-transform"
                 aria-label={`Visit ${project.title} website`}
               >
