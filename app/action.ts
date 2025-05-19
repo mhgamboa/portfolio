@@ -7,7 +7,7 @@ type FormData = z.infer<typeof formSchema>;
 
 export async function sendEmail(formData: FormData) {
   const validatedFields = formSchema.safeParse(formData);
-  console.log("process.env.RESEND_API_KEY", process.env.RESEND_API_KEY);
+  // console.log("process.env.RESEND_API_KEY", process.env.RESEND_API_KEY);
 
   if (!validatedFields.success) return { data: null, error: "Invalid fields" };
   const resend = new Resend(process.env.RESEND_API_KEY);
