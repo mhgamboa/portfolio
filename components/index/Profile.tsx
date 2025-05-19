@@ -1,10 +1,11 @@
-import { Github, Mail, Twitter, Youtube } from "lucide-react";
+import { Github, Mail, Twitter, Youtube, Linkedin } from "lucide-react";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import profile from "@/assets/images/profile.png";
 
 const socialLinks = [
+  { href: "https://www.linkedin.com/in/marcus-gamboa/", icon: Linkedin },
   { href: "https://github.com/mhgamboa", icon: Github },
   { href: "https://x.com/Marky__Mark__", icon: Twitter },
   { href: "mailto:marcus@marcusgamboa.com", icon: Mail },
