@@ -18,9 +18,9 @@ type FormData = z.infer<typeof formSchema>;
 
 export function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
-    name: "Marcus Gamboa",
-    email: "marcus@gamboa.dev",
-    message: "Hello, I'm Marcus Gamboa",
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
