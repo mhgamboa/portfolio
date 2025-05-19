@@ -44,7 +44,7 @@ export const Services = () => {
             key={idx}
             type="button"
             onClick={handleScrollToContact}
-            className={`border-4 border-black p-6 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] text-left w-full ${service.className} ${service.colSpan}`}
+            className={`border-4 border-black p-6 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] text-left w-full ${service.className} ${service.colSpan} hover:translate-y-0.5 hover:translate-x-0.5 transition-transform`}
           >
             <h3 className="font-bold mb-2">{service.title}</h3>
             <p className="text-sm mb-0">{service.description}</p>
