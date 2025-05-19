@@ -19,7 +19,7 @@ export default function Home() {
         <Bio />
         <Services />
         <Projects />
-        <Companies />
+        {/* <Companies /> */}
         <ContactForm />
 
         {/* Footer */}
