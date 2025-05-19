@@ -1,6 +1,8 @@
 import { Github, Mail, Twitter, Youtube } from "lucide-react";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import profile from "@/assets/images/profile.png";
 
 const socialLinks = [
   { href: "https://github.com/mhgamboa", icon: Github },
@@ -12,11 +14,13 @@ const socialLinks = [
 export default function Profile() {
   return (
     <div className="flex items-center gap-4 mb-8">
-      <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-        <img
-          src="/tech-entrepreneur-portrait.png"
+      <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+        <Image
+          src={profile}
           alt="Marcus Gamboa"
           className="w-full h-full object-cover"
+          width={100}
+          height={100}
         />
       </div>
       <div>
