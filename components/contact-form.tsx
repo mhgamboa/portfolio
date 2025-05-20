@@ -9,13 +9,16 @@ import { tryCatch } from "@/utils/trycatch";
 import { formSchema, type FormData } from "@/lib/schemas";
 import { motion } from "framer-motion";
 import { useInView } from "@/hooks/use-in-view";
+import { Turnstile } from "@marsidev/react-turnstile";
 
 export function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     message: "",
+    turnstileToken: "",
   });
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -69,7 +72,7 @@ export function ContactForm() {
 
   // Reset form state
   const resetForm = () => {
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "", message: "", turnstileToken: "" });
     setTouchedFields(new Set());
     setErrors({});
     setSubmitError(null);
@@ -80,13 +83,24 @@ export function ContactForm() {
     e.preventDefault();
     setSubmitError(null);
 
+    if (!turnstileToken) {
+      setSubmitError("Please complete the security check");
+      return;
+    }
+
+    // Update formData with the current turnstileToken before validation
+    const formDataWithToken = {
+      ...formData,
+      turnstileToken,
+    };
+
     // Validate all form data with Zod
     try {
-      formSchema.parse(formData);
+      formSchema.parse(formDataWithToken);
       setIsSubmitting(true);
       setErrors({});
 
-      const result = await tryCatch(sendEmail(formData));
+      const result = await tryCatch(sendEmail(formDataWithToken));
 
       if (result.error) {
         // Handle different error scenarios
@@ -254,6 +268,24 @@ export function ContactForm() {
                 } bg-gray-100 dark:bg-gray-800 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-[#69a1f0]`}
               />
               {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+            </div>
+
+            <div className="flex justify-center">
+              <Turnstile
+                siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                onSuccess={token => {
+                  setTurnstileToken(token);
+                  setFormData(prev => ({ ...prev, turnstileToken: token }));
+                }}
+                onError={() => {
+                  setTurnstileToken(null);
+                  setFormData(prev => ({ ...prev, turnstileToken: "" }));
+                }}
+                onExpire={() => {
+                  setTurnstileToken(null);
+                  setFormData(prev => ({ ...prev, turnstileToken: "" }));
+                }}
+              />
             </div>
 
             <button

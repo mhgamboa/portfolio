@@ -3,11 +3,16 @@
 import { EmailTemplate } from "@/components/email-template";
 import { Resend } from "resend";
 import { formSchema, type FormData } from "@/lib/schemas";
+import { validateTurnstileToken } from "@/lib/turnstile";
 
-export async function sendEmail(formData: FormData) {
+export async function sendEmail(formData: FormData & { turnstileToken: string }) {
   const validatedFields = formSchema.safeParse(formData);
-
   if (!validatedFields.success) return { data: null, error: "Invalid fields" };
+
+  // Validate Turnstile token
+  const isValidToken = await validateTurnstileToken(formData.turnstileToken);
+  if (!isValidToken) return { data: null, error: "Invalid security check" };
+
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
