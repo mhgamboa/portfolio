@@ -91,8 +91,8 @@ export const Services = () => {
         >
           <h3 className="font-bold mb-2">💬 Get Feedback on Your Project</h3>
           <p className="text-sm mb-0">
-            Need advice on your startup? Let's chat! (~20 min) I'll share my thoughts on your
-            project and maybe even give you some pointers?
+            Need advice or want to bounce ideas about your startup? Let's chat! (~20 min) I'll share
+            my thoughts on your project and maybe even give you some pointers.
           </p>
         </motion.div>
 
@@ -127,8 +127,8 @@ export const Services = () => {
         >
           <h3 className="font-bold mb-2">🚀 Let's Work Together</h3>
           <p className="text-sm mb-0">
-            With experience creating production-ready apps, I can help build your next project with
-            Next.js. Let's see if we're a good fit!
+            With experience creating production-ready apps, I can help build your <i>Next</i> (Pun
+            intended) project. Let's see if we're a good fit!
           </p>
         </motion.div>
       </div>
