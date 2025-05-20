@@ -25,11 +25,11 @@ export function ThemeToggle() {
         theme === "dark" ? "bg-[#2a2a2a] text-white" : "bg-white text-black"
       }`}
       aria-label="Toggle theme"
-      whileHover={{ scale: 1.05 }}
+      whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.1 }}
     >
       <motion.div
         initial={{ rotate: 0 }}
