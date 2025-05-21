@@ -43,9 +43,8 @@ export const Bio = () => {
           Utilize AI to implement beautiful client facing products
         </motion.li>
         <motion.li variants={item}>
-          Listen to consumer feedback and provide tailored solutions
+          Developing websites for small businesses & individuals
         </motion.li>
-        <motion.li variants={item}>Consulting and feedback for startups</motion.li>
       </motion.ul>
     </motion.div>
   );
