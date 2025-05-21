@@ -64,6 +64,7 @@ export const Projects = () => {
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Link
                   href={project.websiteUrl}
+                  target="_blank"
                   className="bg-[#69a1f0] p-1.5 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-0.5 hover:translate-x-0.5 transition-transform block"
                   aria-label={`Visit ${project.title} website`}
                 >
@@ -75,6 +76,7 @@ export const Projects = () => {
                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                   <Link
                     href={project.githubUrl}
+                    target="_blank"
                     className="bg-gray-200 dark:bg-white p-1.5 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-0.5 hover:translate-x-0.5 transition-transform block"
                     aria-label={`View ${project.title} on GitHub`}
                   >
