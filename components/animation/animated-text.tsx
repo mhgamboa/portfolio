@@ -1,14 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 interface AnimatedTextProps {
-  text: string;
+  children: ReactNode;
   className?: string;
   once?: boolean;
 }
 
-export function AnimatedText({ text, className = "", once = true }: AnimatedTextProps) {
+export function AnimatedText({ children, className = "", once = true }: AnimatedTextProps) {
+  // Convert children to string and split into words
+  const text = String(children);
   const words = text.split(" ");
 
   const container = {

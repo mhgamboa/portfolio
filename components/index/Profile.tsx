@@ -36,8 +36,13 @@ export default function Profile() {
         />
       </MotionDiv>
       <div className="text-center sm:text-left flex flex-col gap-2 sm:block">
-        <AnimatedText text="Marcus Gamboa" className="text-2xl font-black" />
-        <AnimatedText text="Solopreneur & Next.js Fanatic" className="font-bold" />
+        <AnimatedText className="text-2xl font-black">Marcus Gamboa</AnimatedText>
+        <AnimatedText className="font-bold">Solopreneur &amp; Next.js Fanatic</AnimatedText>
+        <div>
+          <AnimatedText className="text-gray-800 dark:text-muted-foreground">
+            Orem, Utah
+          </AnimatedText>
+        </div>
       </div>
       <MotionDiv
         className="flex justify-center sm:justify-end gap-3 w-full sm:w-auto mt-4 sm:mt-0"

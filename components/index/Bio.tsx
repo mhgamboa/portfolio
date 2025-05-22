@@ -17,8 +17,8 @@ export const Bio = () => {
       transition={{ duration: 0.6, type: "spring" }}
     >
       <p className="text-lg mb-6">
-        I'm a solopreneur and Next.js enthusiast with a degree in Entrepreneurship from BYU. I'm
-        passionate about building modern web applications for startups!
+        I'm a solopreneur and Next.js enthusiast with a degree in Entrepreneurship from BYU based
+        out of Utah. I'm passionate about building modern web applications for startups!
       </p>
 
       <h2 className="text-xl font-black mb-4">What I Do:</h2>
