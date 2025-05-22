@@ -1,17 +1,7 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
-
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
+import MotionDiv from "@/components/animation/wrappers/motion-div";
+import MotionUl from "@/components/animation/wrappers/motion-ul";
+import MotionLi from "@/components/animation/wrappers/motion-li";
 
 const item = {
   hidden: { opacity: 0, y: 20 },
@@ -20,7 +10,7 @@ const item = {
 
 export const Bio = () => {
   return (
-    <motion.div
+    <MotionDiv
       className="mb-12"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -32,20 +22,26 @@ export const Bio = () => {
       </p>
 
       <h2 className="text-xl font-black mb-4">What I Do:</h2>
-      <motion.ul
+      <MotionUl
         className="list-disc pl-6 space-y-2"
-        variants={container}
+        variants={{
+          hidden: { opacity: 0 },
+          show: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.1,
+            },
+          },
+        }}
         initial="hidden"
         animate="show"
       >
-        <motion.li variants={item}>Plan, build and launch Next.js applications</motion.li>
-        <motion.li variants={item}>
+        <MotionLi variants={item}>Plan, build and launch Next.js applications</MotionLi>
+        <MotionLi variants={item}>
           Utilize AI to implement beautiful client facing products
-        </motion.li>
-        <motion.li variants={item}>
-          Developing websites for small businesses & individuals
-        </motion.li>
-      </motion.ul>
-    </motion.div>
+        </MotionLi>
+        <MotionLi variants={item}>Developing websites for small businesses & individuals</MotionLi>
+      </MotionUl>
+    </MotionDiv>
   );
 };
