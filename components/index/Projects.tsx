@@ -17,10 +17,17 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Forge of Fables",
-    description: "A D&D app that supercharges your campaigns with AI.",
+    description: "A D&D app that supercharges your campaigns with AI",
     tags: ["Next.js", "Stripe", "Tailwind"],
     websiteUrl: "https://forgeoffables.com",
     githubUrl: null,
+  },
+  {
+    title: "Bookkeeping Coaching",
+    description: "A personal Website build for a client in the bookkeeping industry",
+    tags: ["Next.js", "Tailwind", "framer-motion"],
+    websiteUrl: "https://adrimorris.com",
+    githubUrl: "https://github.com/mhgamboa/adri-morris",
   },
   {
     title: "Game Scoring app",
