@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import profile from "@/assets/images/profile.png";
-import { AnimatedText } from "../animation/animated-text";
+import { AnimatedText } from "@/components/animation/animated-text";
 import MotionDiv from "@/components/animation/wrappers/motion-div";
 
 const socialLinks = [
